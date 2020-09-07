@@ -1,8 +1,6 @@
-# auth
+# RestoReview
 
-Flutter WebでFirebase AuthとFirestoreを利用してemailログインするサンプルプロジェクト
-(FirestorageはFlutter Webにまだ対応してないため、アバターの画像は実装していません)
-さらにレストランにレビューを行う
+Flutter WebでFirebase AuthとFirestoreを利用してemailログインし、レストランレビューを書き込むプロジェクトです。FirestorageはFlutter Webにまだ対応してないため、アバターの画像は実装していません。
 
 Flutter Webのサンプルサイトは[こちら](https://firestore-5643d.web.app)からアクセスできます。
 
