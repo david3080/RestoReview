@@ -33,7 +33,22 @@
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-storage.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
-  <script defer src="./init-firebase.js"></script>
+  <script>
+    // ここを上書きする
+    const firebaseConfig = {
+      apiKey: "AIzaSyBeP7GOEmFcSWtWhjDvysu1VeE1XEgdu6o",
+      authDomain: "restoreview-f8e28.firebaseapp.com",
+      databaseURL: "https://restoreview-f8e28.firebaseio.com",
+      projectId: "restoreview-f8e28",
+      storageBucket: "restoreview-f8e28.appspot.com",
+      messagingSenderId: "831539669578",
+      appId: "1:831539669578:web:850f5bd80f7e88a8fcd4b3",
+      measurementId: "G-PCJXZ2JEB3"
+    };
+    // ここまで
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
