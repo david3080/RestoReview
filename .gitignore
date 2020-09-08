@@ -24,6 +24,7 @@
 .pub-cache/
 .pub/
 
+public/
 build/
 ios/
 android/
