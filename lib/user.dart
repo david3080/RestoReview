@@ -96,7 +96,7 @@ class User {
     ).then((result) {
       if(result != null) {
         userColRef.doc(result.user.uid).get().then((snapshot) {
-          if(snapshot.data == null) { // データベースにユーザ情報がなければ初期化
+          if(snapshot.data() == null) { // データベースにユーザ情報がなければ初期化
             User user = User(uid:result.user.uid,email:result.user.email);
             User newUser = initUser(user); // initUserStringに定義されたユーザなら情報コピー
             userColRef.doc(newUser.uid).set(newUser.toMap());
